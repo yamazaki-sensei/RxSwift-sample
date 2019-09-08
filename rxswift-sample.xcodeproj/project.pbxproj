@@ -13,6 +13,8 @@
 		423EF0C623251F920053BE73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 423EF0C523251F920053BE73 /* Assets.xcassets */; };
 		423EF0C923251F920053BE73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 423EF0C723251F920053BE73 /* LaunchScreen.storyboard */; };
 		429FBF83232531C800230018 /* RxButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429FBF82232531C800230018 /* RxButtonView.swift */; };
+		429FBF8E23253C7B00230018 /* Timer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 429FBF8C23253C7B00230018 /* Timer.storyboard */; };
+		429FBF8F23253C7B00230018 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429FBF8D23253C7B00230018 /* TimerViewController.swift */; };
 		42F5ADF523252AB800C4FC8A /* ButtonTapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F5ADF423252AB800C4FC8A /* ButtonTapViewController.swift */; };
 		42F5ADF723252AC300C4FC8A /* ButtonTap.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42F5ADF623252AC300C4FC8A /* ButtonTap.storyboard */; };
 		42F5ADFA232530F200C4FC8A /* LegacyButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F5ADF9232530F200C4FC8A /* LegacyButtonView.swift */; };
@@ -28,6 +30,8 @@
 		423EF0C823251F920053BE73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		423EF0CA23251F920053BE73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		429FBF82232531C800230018 /* RxButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxButtonView.swift; sourceTree = "<group>"; };
+		429FBF8C23253C7B00230018 /* Timer.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Timer.storyboard; sourceTree = "<group>"; };
+		429FBF8D23253C7B00230018 /* TimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		42F5ADF423252AB800C4FC8A /* ButtonTapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTapViewController.swift; sourceTree = "<group>"; };
 		42F5ADF623252AC300C4FC8A /* ButtonTap.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ButtonTap.storyboard; sourceTree = "<group>"; };
 		42F5ADF9232530F200C4FC8A /* LegacyButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegacyButtonView.swift; sourceTree = "<group>"; };
@@ -93,6 +97,8 @@
 		42F5ADF323252A9F00C4FC8A /* items */ = {
 			isa = PBXGroup;
 			children = (
+				429FBF8C23253C7B00230018 /* Timer.storyboard */,
+				429FBF8D23253C7B00230018 /* TimerViewController.swift */,
 				42F5ADF423252AB800C4FC8A /* ButtonTapViewController.swift */,
 				42F5ADF623252AC300C4FC8A /* ButtonTap.storyboard */,
 			);
@@ -176,6 +182,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				429FBF8E23253C7B00230018 /* Timer.storyboard in Resources */,
 				42F5ADF723252AC300C4FC8A /* ButtonTap.storyboard in Resources */,
 				423EF0C923251F920053BE73 /* LaunchScreen.storyboard in Resources */,
 				423EF0C623251F920053BE73 /* Assets.xcassets in Resources */,
@@ -236,6 +243,7 @@
 				42F5ADFA232530F200C4FC8A /* LegacyButtonView.swift in Sources */,
 				42F5ADF523252AB800C4FC8A /* ButtonTapViewController.swift in Sources */,
 				423EF0BF23251F900053BE73 /* AppDelegate.swift in Sources */,
+				429FBF8F23253C7B00230018 /* TimerViewController.swift in Sources */,
 				429FBF83232531C800230018 /* RxButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

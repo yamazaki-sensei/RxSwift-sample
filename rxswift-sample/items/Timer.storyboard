@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BbS-jh-Vbu">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Timer View Controller-->
+        <scene sceneID="f6a-Uf-87Y">
+            <objects>
+                <viewController id="BbS-jh-Vbu" customClass="TimerViewController" customModule="rxswift_sample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1Vy-F2-hqx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Legacy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ITm-iI-Ff9">
+                                <rect key="frame" x="47" y="716" width="56" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Pq-6m-pRm">
+                                <rect key="frame" x="47" y="770" width="10.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rx" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EmY-8a-HkP">
+                                <rect key="frame" x="300" y="716" width="20" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oZw-Nv-DbR">
+                                <rect key="frame" x="39" y="132" width="50" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Legacy"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FtG-Jx-tMZ">
+                                <rect key="frame" x="326" y="132" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Rx"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8a6-hP-ISO">
+                                <rect key="frame" x="311" y="770" width="313" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0Pq-6m-pRm" firstAttribute="leading" secondItem="ITm-iI-Ff9" secondAttribute="leading" id="Bey-KR-c69"/>
+                            <constraint firstItem="b3l-MU-I8Q" firstAttribute="bottom" secondItem="ITm-iI-Ff9" secondAttribute="bottom" constant="125" id="H75-Ow-b00"/>
+                            <constraint firstItem="8a6-hP-ISO" firstAttribute="top" secondItem="EmY-8a-HkP" secondAttribute="bottom" constant="33" id="Mhq-aj-jeL"/>
+                            <constraint firstItem="b3l-MU-I8Q" firstAttribute="bottom" secondItem="8a6-hP-ISO" secondAttribute="bottom" constant="71" id="MtU-fx-bKQ"/>
+                            <constraint firstItem="b3l-MU-I8Q" firstAttribute="trailing" secondItem="EmY-8a-HkP" secondAttribute="trailing" constant="94" id="Qct-gB-X3s"/>
+                            <constraint firstItem="8a6-hP-ISO" firstAttribute="leading" secondItem="EmY-8a-HkP" secondAttribute="leading" id="UYT-0d-xQW"/>
+                            <constraint firstItem="ITm-iI-Ff9" firstAttribute="centerX" secondItem="1Vy-F2-hqx" secondAttribute="centerX" constant="-132" id="VZY-uY-IZM"/>
+                            <constraint firstItem="b3l-MU-I8Q" firstAttribute="bottom" secondItem="0Pq-6m-pRm" secondAttribute="bottom" constant="71" id="jrL-K7-lBb"/>
+                            <constraint firstItem="0Pq-6m-pRm" firstAttribute="top" secondItem="ITm-iI-Ff9" secondAttribute="bottom" constant="33" id="q9Z-Va-neZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="b3l-MU-I8Q"/>
+                    </view>
+                    <connections>
+                        <outlet property="legacyButton" destination="oZw-Nv-DbR" id="riU-iq-mhj"/>
+                        <outlet property="legacyValueLabel" destination="0Pq-6m-pRm" id="xYY-6b-akw"/>
+                        <outlet property="rxButton" destination="FtG-Jx-tMZ" id="bNN-Dc-pvH"/>
+                        <outlet property="rxValueLabel" destination="8a6-hP-ISO" id="gkb-K4-3cu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Xq-8d-Xop" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-57.971014492753625" y="-70.3125"/>
+        </scene>
+    </scenes>
+</document>
