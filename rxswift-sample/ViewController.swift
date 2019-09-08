@@ -10,12 +10,14 @@ import UIKit
 
 private let items = [
     "ボタンのタップ",
-    "タイマー"
+    "タイマー",
+    "Validation"
 ]
 
 private let storyboards = [
     UIStoryboard(name: "ButtonTap", bundle: .main),
-    UIStoryboard(name: "Timer", bundle: .main)
+    UIStoryboard(name: "Timer", bundle: .main),
+    UIStoryboard(name: "Validation", bundle: .main)
 ]
 
 class ViewController: UIViewController {
