@@ -8,13 +8,45 @@
 
 import UIKit
 
+private let items = [
+    "ボタンのタップ"
+]
+
+private let storyboards = [
+    UIStoryboard(name: "ButtonTap", bundle: .main)
+]
+
 class ViewController: UIViewController {
+
+    @IBOutlet weak var tableView: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
     }
-
-
 }
 
+extension ViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return items.count
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell")!
+        cell.textLabel?.text = items[indexPath.row]
+
+        return cell
+    }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = storyboards[indexPath.row].instantiateInitialViewController()!
+
+        navigationController?.pushViewController(vc, animated: true)
+
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+
+}
