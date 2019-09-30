@@ -11,13 +11,15 @@ import UIKit
 private let items = [
     "ボタンのタップ",
     "タイマー",
-    "Validation"
+    "Validation",
+    "APIコール"
 ]
 
 private let storyboards = [
     UIStoryboard(name: "ButtonTap", bundle: .main),
     UIStoryboard(name: "Timer", bundle: .main),
-    UIStoryboard(name: "Validation", bundle: .main)
+    UIStoryboard(name: "Validation", bundle: .main),
+    UIStoryboard(name: "APICall", bundle: .main)
 ]
 
 class ViewController: UIViewController {
